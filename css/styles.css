@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color:var(--very-dark-blue-main-BG);
+    margin: 0;
+    padding: 0;
+} 
+main {
+     display: flex;
+     justify-content: center; 
+     align-items: center;
+     height: 100vh;
+}
+
+.card {
+    background-color: var(--very-dark-blue-card-BG);
+    width: 280px;
+    padding: 25px;   
+    border-radius: 1rem;
+    box-shadow: 0 30px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.card-image {
+    line-height: 0;
+    position: relative;
+    border-radius: 0.5rem;
+ 
+}
+.card-image-equilibrium {
+width: 100%;
+height: auto;
+border-radius: inherit;
+
+}
+.card-icon-view {
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    opacity: 0;
+}
+.card-image:hover {
+    background-color: var(--cyan);
+    cursor: pointer;
+}
+.card-image:hover .card-image-equilibrium {
+    cursor:pointer;
+}
+.card-image:hover .card-icon-view {
+    opacity: 1;
+}
+.card-image:hover .card-image-equilibrium  {
+    opacity: 0.5;
+}
+.card-body {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--very-dark-blue-line);
+}
+.card-body-title {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+.card-body-title:hover {
+color: var(--cyan);
+cursor: pointer;
+}
+
+.card-body-text {
+    color: var(--soft-blue);
+}
+.card-body-data {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.img-ethereum {
+    margin-bottom: -0.2rem;
+}
+.img-clock {
+    margin-bottom: -0.1rem;
+}
+.data-ethereum span {
+    color: var(--cyan);
+    margin-left: 0.3rem;
+   
+}
+
+.data-time span {
+    color: var(--soft-blue);
+    margin-left: 0.3rem;
+}
+.card-footer {
+    display: flex;
+    height:4vh;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+.img-avatar {
+    margin-bottom: -0.6rem;
+    border-radius: 50%;
+    border: 0.1rem solid var(--white);
+}
+.card-footer p {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    color:var(--soft-blue);
+}
+.card-footer span {
+    color:var(--white);
+}
+.card-footer span:hover {
+    color:var(--cyan);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
